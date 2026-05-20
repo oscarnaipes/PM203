@@ -2,6 +2,8 @@
 // Array = catalogo
 // Objeto = cada producto { }
 // Propiedades = id, nombre, precio, categoria
+// Find = buscar un producto específico por su id
+// Filter = filtrar productos por precio o categoría
 
 let catalogo = [
 
@@ -78,7 +80,7 @@ let catalogo = [
 ];
 
 
-// ========= CATÁLOGO =========
+
 
 console.log("\n=== CATÁLOGO COMPLETO ===");
 
@@ -93,7 +95,7 @@ Categoría: ${catalogo[i].categoria}
 }
 
 
-// ========= PRODUCTOS BARATOS =========
+
 
 console.log("\n=== PRODUCTOS BARATOS ===");
 
@@ -112,7 +114,7 @@ Categoría: ${baratos[i].categoria}
 }
 
 
-// ========= PRODUCTOS CAROS =========
+
 
 console.log("\n=== PRODUCTOS CAROS ===");
 
@@ -131,7 +133,7 @@ Categoría: ${caros[i].categoria}
 }
 
 
-// ========= BEBIDAS =========
+
 
 console.log("\n=== BEBIDAS ===");
 
@@ -150,7 +152,7 @@ Categoría: ${bebidas[i].categoria}
 }
 
 
-// ========= POSTRES =========
+
 
 console.log("\n=== POSTRES ===");
 
@@ -169,7 +171,7 @@ Categoría: ${postres[i].categoria}
 }
 
 
-// ========= FIND =========
+
 
 console.log("\n=== BUSCAR PRODUCTO ===");
 
