@@ -86,7 +86,7 @@ let catalogo = [
 
 
 
-// PROMESA DE COCINA
+
 
 function prepararProducto(idProducto){
 
@@ -102,17 +102,17 @@ Preparando ${producto.nombre}...
 `);
 
 
-// Simular tiempo
+
 
 setTimeout(()=>{
 
 
-// Simular ingredientes aleatorios
+
 
 let ingredienteDisponible = Math.random() > 0.5;
 
 
-// Si hay ingrediente
+
 
 if(ingredienteDisponible){
 
@@ -122,7 +122,7 @@ ${producto.nombre} listo
 
 }
 
-// Si faltan ingredientes
+
 
 else{
 
@@ -141,7 +141,7 @@ No hay ingredientes para ${producto.nombre}
 
 
 
-// EJECUCIÓN
+
 
 prepararProducto(2)
 
