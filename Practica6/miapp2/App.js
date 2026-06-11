@@ -9,25 +9,13 @@ import {Perfil} from './Components/Perfil';
 export default function App() {
   return (
     <View style={styles.container}>
-
-      <Text>-------Componentes Nativos -------------</Text>
-
-      <Image source={require('./assets/wave.png')} />
-      <Text>Hola mundo React Native</Text>
-
-      <Text>-------Componentes Propio Simple -------------</Text>
       
-      <Saludo></Saludo>
-
-      <Text>-------Componentes Propio Compuesto -------------</Text>
-
-      <Saludo2></Saludo2>
-
-      <Text>-------Componentes Propio Perfil -------------</Text>
+      <Perfil
+      nombre="Oscar Barajas"
+      carrera= "Sistemas"
+      materia = "Programación Movil"
+      cuatri = "6"></Perfil>
       
-      <Perfil></Perfil>
-
-
       <StatusBar style="auto" />
     </View>
   );
