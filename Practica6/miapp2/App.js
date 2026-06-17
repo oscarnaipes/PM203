@@ -4,17 +4,26 @@ import { StyleSheet, Text, View, Image,} from 'react-native';
 import {Saludo} from './Components/Saludo';
 import {Saludo2} from './Components/Saludo2';
 import {Perfil} from './Components/Perfil';
-
 /* Zona2: Main - Hogar de los componentes */
 export default function App() {
   return (
     <View style={styles.container}>
       
       <Perfil
+      estiloExt={styles.tarjetaRoja}
       nombre="Oscar Barajas"
       carrera= "Sistemas"
       materia = "Programación Movil"
       cuatri = "6"></Perfil>
+
+      <Perfil estiloExt={styles.tarjetaVerde}nombre="Alejandro Batres" carrera= "Mecatronica" materia = "Base de Datos" cuatri = "9"></Perfil>
+
+      <Perfil
+      estiloExt={styles.tarjetaRoja}
+      nombre="Matias Monroy"
+      carrera= "Automotriz"
+      materia = "Redes"
+      cuatri = "2"></Perfil>
       
       <StatusBar style="auto" />
     </View>
@@ -27,6 +36,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row',
   },
+
+  tarjetaRoja:{backgroundColor: '#ff6b6b'},
+  tarjetaVerde:{backgroundColor: '#6bcb77'},
 });
