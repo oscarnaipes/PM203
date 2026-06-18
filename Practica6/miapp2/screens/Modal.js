@@ -1,19 +1,11 @@
 /*zona1: importaciones de componentes y archivos*/
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image,} from 'react-native';
-import MenuScreen from './screens/MenuScreen';
-import PressableArea from './screens/PressableArea';
-import TextInput from './screens/TextInput';
-import FlatList from './screens/FlatList';
-import ImageBackground from './screens/ImageBackground';
-import ActivityIndicator from './screens/ActivityIndicator';
-import Modal from './screens/Modal';
-
 /* Zona2: Main - Hogar de los componentes */
-export default function App() {
+export default function Modal() {
   return (
     <View style={styles.container}>
-        <MenuScreen/>
+        <Text>Aqui va la practica de Fernando</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -25,8 +17,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row',
   },
 
   tarjetaRoja:{backgroundColor: '#ff6b6b'},
