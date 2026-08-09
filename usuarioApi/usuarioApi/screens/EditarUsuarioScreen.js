@@ -16,6 +16,8 @@ import {
   useRouter,
 } from "expo-router";
 
+import { API_BASE_URL } from "../config/api";
+
 
 export default function EditarUsuarioScreen() {
 
@@ -43,10 +45,7 @@ export default function EditarUsuarioScreen() {
 
 
   // Dirección de tu API
-  const API_URL =
-    Platform.OS === "web"
-      ? "http://localhost:5000"
-      : "http://172.20.10.4:5000";
+  const API_URL = API_BASE_URL;
 
 
   // Mostrar mensajes

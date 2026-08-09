@@ -9,16 +9,14 @@ import {
   Platform,
 } from "react-native";
 import { useRouter } from "expo-router";
+import { API_BASE_URL } from "../config/api";
 
 export default function ConsultaUsuariosScreen() {
 
   const router = useRouter();
   const [usuarios, setUsuarios] = useState([]);
 
-  const API_URL =
-    Platform.OS === "web"
-      ? "http://localhost:5000/v1/usuarios/"
-      : "http://172.20.10.4:5000/v1/usuarios/";
+  const API_URL = `${API_BASE_URL}/v1/usuarios/`;
 
   useEffect(() => {
     obtenerUsuarios();

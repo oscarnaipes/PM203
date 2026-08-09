@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import {View,SafeAreaView,Text,TextInput,Pressable,StyleSheet,Alert, Platform} from 'react-native';
+import { API_BASE_URL } from '../config/api';
 
 export default function App() {
   const [nombre, setNombre] = useState('');
   const [edad, setEdad] = useState('');
   const [cargando , setCargando] = useState(false);
 
-   const API_URL = Platform.OS === 'web'
-    ? 'http://localhost:5000/v1/usuarios/'
-    : 'http://172.20.10.4:5000/v1/usuarios/';
+  const API_URL = `${API_BASE_URL}/v1/usuarios/`;
 
   const mostrarMensaje = (titulo,mensaje) => {
     if(Platform.OS === 'web'){
