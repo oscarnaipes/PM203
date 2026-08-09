@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "repa2",
-    "slug": "repa2",
+    "name": "Usuarios App",
+    "slug": "usuarios-app-pm203",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/splash-icon.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -16,9 +16,10 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.pm203.usuariosapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#2563EB"
       },
       "edgeToEdgeEnabled": true
     },
@@ -26,7 +27,21 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
-    ]
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5e0f648b-2c93-4571-90d9-4d3e2afd6a01"
+      }
+    }
   }
 }
